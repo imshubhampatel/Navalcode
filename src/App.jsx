@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import "./styles.css";
 
 export default function App() {
   // var count = 0;
@@ -11,6 +11,7 @@ export default function App() {
   const [count, setCount] = useState(0);
   function increaseHandler() {
     setCount(count + 1);
+  console.log(count)
 
   }
   function decreaseHandler() {
@@ -31,8 +32,6 @@ export default function App() {
         <img src={imgSrc2} alt="mypic"/>
       </button>
       <div className="output">You have got <span>{count}</span> likes</div>
-
-     
     </div>
   );
 }
